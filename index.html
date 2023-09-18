@@ -25,7 +25,6 @@
             margin-top: 20px; /* Add space at the top */
             text-transform: uppercase;
             font-weight: bold;
-            white-space: nowrap; /* Prevent text from wrapping */
             overflow: hidden; /* Hide overflowing text */
             animation: blinkText 2s infinite alternate; /* Blink animation */
         }
@@ -184,48 +183,6 @@
             }
         }
 
-        /* CSS for the YouTube button */
-        .youtube-btn {
-            display: inline-block;
-            padding: 20px 30px;
-            background-color: #FF0000; /* YouTube red color */
-            color: #fff;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 28px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* Hover effect - change background color and scale on hover */
-        .youtube-btn:hover {
-            background-color: #FF5733; /* Lighter red on hover */
-            transform: scale(1.2);
-        }
-
-        /* CSS for the Instagram button */
-        .instagram-btn {
-            display: inline-block;
-            padding: 20px 30px;
-            background-color: #BC2A8D; /* Instagram purple color */
-            color: #fff;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 28px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* Hover effect - change background color and scale on hover */
-        .instagram-btn:hover {
-            background-color: #E4405F; /* Lighter purple on hover */
-            transform: scale(1.2);
-        }
-
         /* CSS for responsiveness */
         @media screen and (max-width: 600px) {
             h1 {
@@ -264,15 +221,17 @@
         <!-- Display positive quotes about Ganesha -->
         <p class="quotes">"May Lord Ganesha bless you with wisdom and prosperity."</p>
         <p class="quotes">"Wishing you a joyful and blessed day."</p>
-        <!-- Animated button to go to animate.html -->
-        <a href="animate.html" class="animate-btn">Animate Me</a>
-        <!-- Social media links -->
-        <div class="social-links">
-            <!-- YouTube link -->
-            <a href="https://www.youtube.com/channel/UC_zFc33JSt5Nw0KwQ4NdXEg" class="youtube-btn" target="_blank">YouTube</a>
-            <!-- Instagram link -->
-            <a href="https://www.instagram.com/ghana_wisdom_projects/" class="instagram-btn" target="_blank">Instagram</a>
-        </div>
+        <!-- Creator information -->
+        <p class="creator-info">Creator: Ghana Wisdom with Love ❤️</p>
+    </div>
+    <!-- Animated button to go to animate.html -->
+    <a href="animate.html" class="animate-btn">Animate Me</a>
+    <!-- Social media links -->
+    <div class="social-links">
+        <!-- YouTube link -->
+        <a href="https://www.youtube.com/channel/UC_zFc33JSt5Nw0KwQ4NdXEg" class="youtube-btn" target="_blank">YouTube</a>
+        <!-- Instagram link -->
+        <a href="https://www.instagram.com/ghana_wisdom_projects/" class="instagram-btn" target="_blank">Instagram</a>
     </div>
 </body>
 </html>
