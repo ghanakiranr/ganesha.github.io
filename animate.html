@@ -10,6 +10,7 @@
             background-color: #fff;
             text-align: center;
             padding: 20px;
+            font-family: Arial, sans-serif;
         }
 
         .creator-info {
@@ -17,14 +18,79 @@
             color: #888;
             margin-top: 20px;
         }
+
+        /* CSS for responsiveness */
+        @media screen and (max-width: 600px) {
+            .creator-info {
+                font-size: 14px;
+            }
+        }
+
+        /* CSS for social media links */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-link {
+            margin-right: 20px;
+        }
+
+        /* CSS for the YouTube button */
+        .youtube-btn {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #FF0000; /* YouTube red color */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hover effect - change background color and scale on hover */
+        .youtube-btn:hover {
+            background-color: #FF5733; /* Lighter red on hover */
+            transform: scale(1.2);
+        }
+
+        /* CSS for the Instagram button */
+        .instagram-btn {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #BC2A8D; /* Instagram purple color */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hover effect - change background color and scale on hover */
+        .instagram-btn:hover {
+            background-color: #E4405F; /* Lighter purple on hover */
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
     <!-- Display the image on the new page -->
     <img src="https://www.smitcreation.com/sc/08/50615/50615.gif" alt="Sample GIF">
-
     
     <!-- Creator information -->
     <p class="creator-info">Creator: Ghana Wisdom with Love ❤️</p>
+    
+    <!-- Social media links -->
+    <div class="social-links">
+        <!-- YouTube link -->
+        <a href="https://www.youtube.com/channel/UC_zFc33JSt5Nw0KwQ4NdXEg" class="youtube-btn" target="_blank">YouTube</a>
+        <!-- Instagram link -->
+        <a href="https://www.instagram.com/ghana_wisdom_projects/" class="instagram-btn" target="_blank">Instagram</a>
+    </div>
 </body>
 </html>
