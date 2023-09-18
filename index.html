@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ganesha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffd700; /* Gold background color */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            perspective: 1000px; /* Add perspective to the body */
+        }
+
+        header {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 20px; /* Add space at the top */
+            text-transform: uppercase;
+            font-weight: bold;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflowing text */
+            animation: blinkText 2s infinite alternate; /* Blink animation */
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Animation styles */
+        .animated-text {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: rotateText 4s linear infinite, changeColor 10s linear infinite; /* Rotation and color change animation */
+        }
+
+        /* Positive quotes about Ganesha */
+        .quotes {
+            font-size: 24px;
+            font-style: italic;
+            color: #4CAF50; /* Quote color */
+        }
+
+        /* Keyframes for blink animation */
+        @keyframes blinkText {
+            0%, 100% {
+                color: black; /* Black color */
+            }
+            33% {
+                color: white; /* White color */
+            }
+            66% {
+                color: yellow; /* Yellow color */
+            }
+        }
+
+        /* Keyframes for text rotation */
+        @keyframes rotateText {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Keyframes for text color change */
+        @keyframes changeColor {
+            0% {
+                color: red;
+            }
+            6.66% {
+                color: orange;
+            }
+            13.33% {
+                color: yellow;
+            }
+            20% {
+                color: green;
+            }
+            26.66% {
+                color: blue;
+            }
+            33.33% {
+                color: indigo;
+            }
+            40% {
+                color: violet;
+            }
+            46.66% {
+                color: pink;
+            }
+            53.33% {
+                color: brown;
+            }
+            60% {
+                color: gray;
+            }
+            66.66% {
+                color: teal;
+            }
+            73.33% {
+                color: lime;
+            }
+            80% {
+                color: maroon;
+            }
+            86.66% {
+                color: navy;
+            }
+            93.33% {
+                color: olive;
+            }
+            100% {
+                color: red;
+            }
+        }
+
+        /* CSS for the animated button */
+        .animate-btn {
+            display: inline-block;
+            padding: 15px 30px; /* Increased padding to make it bigger */
+            background-color: #FF5733; /* New background color */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 24px; /* Increased font size */
+            font-weight: bold;
+        }
+
+        /* Hover effect - change background color and scale on hover */
+        .animate-btn:hover {
+            background-color: #4CAF50; /* New background color on hover */
+            transform: scale(1.2); /* Scale the button on hover */
+        }
+
+        /* Colorful and animated heart symbol for the creator's name */
+        .creator-heart {
+            animation: colorHeart 5s linear infinite, beatHeart 1s linear infinite;
+            color: red;
+        }
+
+        /* Keyframes for heart color change */
+        @keyframes colorHeart {
+            0%, 100% {
+                color: red;
+            }
+            50% {
+                color: blue;
+            }
+        }
+
+        /* Keyframes for heart beating animation */
+        @keyframes beatHeart {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Make h1 text blink with black, white, and yellow colors -->
+        <h1>Happy Birthday Ganesha</h1>
+    </header>
+    <div class="container">
+        <!-- Display the animated text -->
+        <div class="animated-text">Ganesha</div>
+        <!-- Display positive quotes about Ganesha -->
+        <p class="quotes">"May Lord Ganesha bless you with wisdom and prosperity."</p>
+        <p class="quotes">"Wishing you a joyful and blessed day."</p>
+       
+    </div>
+	<!-- Animated button placed outside the container -->
+    <a href="animate.html" class="animate-btn">Animate Me</a>
+    <!-- Animated heart symbol for the creator's name -->
+    <p class="creator-heart">Creator: Ghana Wisdom with Love ❤️</p>
+</body>
+</html>
