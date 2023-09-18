@@ -148,29 +148,107 @@
             transform: scale(1.2); /* Scale the button on hover */
         }
 
-        /* Colorful and animated heart symbol for the creator's name */
-        .creator-heart {
-            animation: colorHeart 5s linear infinite, beatHeart 1s linear infinite;
-            color: red;
+        /* CSS for social media links */
+        .social-links {
+            margin-top: 20px;
         }
 
-        /* Keyframes for heart color change */
-        @keyframes colorHeart {
+        .social-link {
+            margin-right: 20px;
+        }
+
+        /* CSS for the image container */
+        .image-container {
+            position: relative;
+        }
+
+        /* CSS for the images */
+        .animation-image {
+            display: none; /* Initially hide images */
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add CSS for animation effects */
+        .animate {
+            animation: fadeInOut 5s ease-in-out infinite;
+        }
+
+        /* Define keyframes for fadeInOut animation */
+        @keyframes fadeInOut {
             0%, 100% {
-                color: red;
+                opacity: 0;
             }
             50% {
-                color: blue;
+                opacity: 1;
             }
         }
 
-        /* Keyframes for heart beating animation */
-        @keyframes beatHeart {
-            0%, 100% {
-                transform: scale(1);
+        /* CSS for the YouTube button */
+        .youtube-btn {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #FF0000; /* YouTube red color */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hover effect - change background color and scale on hover */
+        .youtube-btn:hover {
+            background-color: #FF5733; /* Lighter red on hover */
+            transform: scale(1.2);
+        }
+
+        /* CSS for the Instagram button */
+        .instagram-btn {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #BC2A8D; /* Instagram purple color */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hover effect - change background color and scale on hover */
+        .instagram-btn:hover {
+            background-color: #E4405F; /* Lighter purple on hover */
+            transform: scale(1.2);
+        }
+
+        /* CSS for responsiveness */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 36px;
             }
-            50% {
-                transform: scale(1.2);
+
+            .animated-text {
+                font-size: 24px;
+            }
+
+            .quotes {
+                font-size: 18px;
+            }
+
+            .animate-btn {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+
+            .youtube-btn,
+            .instagram-btn {
+                padding: 15px 20px;
+                font-size: 20px;
             }
         }
     </style>
@@ -186,11 +264,15 @@
         <!-- Display positive quotes about Ganesha -->
         <p class="quotes">"May Lord Ganesha bless you with wisdom and prosperity."</p>
         <p class="quotes">"Wishing you a joyful and blessed day."</p>
-       
+        <!-- Animated button to go to animate.html -->
+        <a href="animate.html" class="animate-btn">Animate Me</a>
+        <!-- Social media links -->
+        <div class="social-links">
+            <!-- YouTube link -->
+            <a href="https://www.youtube.com/channel/UC_zFc33JSt5Nw0KwQ4NdXEg" class="youtube-btn" target="_blank">YouTube</a>
+            <!-- Instagram link -->
+            <a href="https://www.instagram.com/ghana_wisdom_projects/" class="instagram-btn" target="_blank">Instagram</a>
+        </div>
     </div>
-	<!-- Animated button placed outside the container -->
-    <a href="animate.html" class="animate-btn">Animate Me</a>
-    <!-- Animated heart symbol for the creator's name -->
-    <p class="creator-heart">Creator: Ghana Wisdom with Love ❤️</p>
 </body>
 </html>
